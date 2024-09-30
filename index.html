@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="chessboard"></div>
+        <div id="message"></div>
+        <div id="move-input">
+            <input type="text" id="move" placeholder="Enter move (e.g., e2e4)">
+            <button onclick="makeMove()">Move</button>
+        </div>
+        <button onclick="newGame()">New Game</button>
+    </div>
+    <script src="chess-logic.js"></script>
+    <script src="chess-ui.js"></script>
+</body>
+</html>
